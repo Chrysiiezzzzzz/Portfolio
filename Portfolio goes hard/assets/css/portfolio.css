@@ -1,0 +1,134 @@
+html {
+    animation: example 13s linear infinite;
+    
+}
+
+@keyframes example {
+    0%   {background: #ffe176;}
+    25%  {background-color:#ffe176;}
+    50%  {background-color:#75a1ff; }
+    75%  {background-color:#ffe176;}
+    100% {background: #ffe176;}
+}
+
+@font-face {
+    font-family: "kh";
+    src: url("../fontz/Kingdom_Hearts_Font.ttf");
+}
+
+@font-face {
+    font-family: "kirby";
+    src: url("../fontz/kirby-classic.ttf");
+}
+
+h1, h3, h4, h5, .quote, .favorite-titles {
+    font-family: kh;
+    font-weight: normal;
+}
+
+h3, h4 {
+    line-height: 0.1;
+}
+
+h3, .favorite-titles {
+    font-size: 2.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+dl, ul, h4, h5 {
+    font-family: kirby, 'Comfortaa', cursive;
+}
+
+header {
+    background: linear-gradient(#263CFF, #ffd53d00);
+
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7rem;
+}
+
+main {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    max-width: 950px;
+}
+
+footer {
+    background: linear-gradient(#ffe176, #263CFF);
+
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 7rem;   
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slash {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.notkirbyable {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+
+nav {
+    background: linear-gradient( 0deg, #add8e6,#a8d1ff00);
+    padding: 1em;
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    
+    height: 20px;
+    width: 100px;
+    border-radius: 0 0 1em 1em;
+
+    transition: height 0.6s;
+}
+
+nav:hover {
+    height: 35px;
+}
+
+.heartless {
+    display: flex;
+    position: fixed;
+    top: 11vh;
+    right:0;
+}
+
+.mini {
+    font-size: .9em;
+    color: #525252;
+    font-family: 'kirby', 'Comfortaa';
+}
+
+#crit {
+    height: 290px;
+    width: auto;
+}
+
+.days {
+    font-family: kh;
+    font-size: 1.7em;
+    color: #525252;
+}
+
+.colon-three {
+    font-weight: bold;
+}

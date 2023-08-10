@@ -1,0 +1,157 @@
+html {
+  animation: example 13s linear infinite;
+  
+}
+
+@keyframes example {
+  0%   {background: #ffe176;}
+  25%  {background-color:#ffe176;}
+  50%  {background-color:#447fff; }
+  75%  {background-color:#ffe176;}
+  100% {background: #ffe176;}
+}
+
+@font-face {
+  font-family: "kh";
+  src: url("../fontz/Kingdom_Hearts_Font.ttf");
+}
+
+@font-face {
+  font-family: "kirby";
+  src: url("../fontz/kirby-classic.ttf");
+}
+
+h1, h3, h4, h5, .quote {
+  font-family: kh;
+  font-weight: normal;
+}
+
+h3, h4 {
+  line-height: 0.1;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+dl, ul, h4, h5, figure {
+  font-family: kirby, cursive;
+}
+
+header {
+  background: linear-gradient(#263CFF, #ffd53d00);
+
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 7rem;
+}
+
+main {
+  margin-top: 11rem;
+  margin-bottom: 8rem;
+  max-width: 950px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  background: linear-gradient(#ffe176, #263CFF);
+
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 7rem;   
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slash {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+  background: linear-gradient( 0deg, #add8e6,#a8d1ff00);
+  padding: 1em;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  height: 20px;
+  width: 100px;
+  border-radius: 0 0 1em 1em;
+
+  transition: height 0.6s;
+}
+
+nav:hover {
+  height: 35px;
+}
+
+.heartless {
+  display: flex;
+  position: fixed;
+  top: 11vh;
+  right:0;
+}
+
+.mini {
+  font-size: .9em;
+  color: #525252;
+}
+
+figure {
+  grid-column: 1 / 2;
+  margin: 0;
+}
+
+figcaption {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#big-pic {
+  border: .1em solid white;
+  box-shadow: .3em .3em .4em .2em gray;
+
+}
+
+#strip-div-container {
+  border: 0.1em solid white;
+  height: 130px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 50vw;
+  box-shadow: 0.2em 0.2em 0.3em 0.1em rgb(48, 50, 59);
+}
+
+#strip-div {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+#strip-div img {
+  border: .05em solid white;
+  cursor: pointer;
+  width: auto;
+  height: 100px;
+  margin-bottom: .5em;
+}
